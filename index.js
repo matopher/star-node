@@ -3,7 +3,7 @@ const prompt = require('prompt');
 
 prompt.start();
 
-console.log()
+console.log('Enter "films", "people", "planets", "species", "starships", or "vehicles".')
 prompt.get(['query'], function (err, result) {
   fetch(`https://swapi.co/api/${result.query}`)
     .then((res) => {

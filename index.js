@@ -3,6 +3,7 @@ const prompt = require('prompt');
 
 prompt.start();
 
+console.log()
 prompt.get(['query'], function (err, result) {
   fetch(`https://swapi.co/api/${result.query}`)
     .then((res) => {
